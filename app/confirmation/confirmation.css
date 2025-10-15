@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ======= 布局容器 ======= */
+.rescue-container {
+  @apply min-h-screen flex flex-col bg-[color:var(--color-dark-bg)];
+}
+
+.rescue-header {
+  background-color: var(--color-primary);
+  @apply w-full py-4 flex justify-center;
+}
+
+.rescue-header h1 {
+  color: var(--color-text-light);
+  @apply text-2xl font-bold;
+}
+
+/* ======= 内容部分 ======= */
+.rescue-body {
+  @apply flex flex-col items-center justify-start px-6 pt-12 pb-10 gap-6;
+}
+
+.rescue-title {
+  color: var(--color-text-light);
+  @apply text-3xl font-bold text-center;
+}
+
+.rescue-subtitle {
+  color: var(--color-text-light);
+  @apply text-center text-base;
+}
+
+/* ======= SVG 救护车 ======= */
+.rescue-ambulance svg {
+  @apply w-64 h-auto mt-6;
+}
+
+/* ======= 时间 ======= */
+.rescue-time {
+  color: var(--color-text-light);
+  @apply mt-6 text-lg;
+}

@@ -16,3 +16,13 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+:root {
+  --color-primary: #E53935;
+  --color-primary-light: #f43f5e;
+  --color-dark-bg: #0b1828;
+  --color-text-light: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-accent: #1d4ed8;
+  --color-border-light: #ffffff;
+}

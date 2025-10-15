@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========= 页面布局 ========= */
+.ed-container {
+  @apply min-h-screen flex flex-col bg-[color:var(--color-dark-bg)];
+}
+
+.ed-header {
+  background-color: var(--color-primary);
+  @apply w-full py-4 px-6 text-center;
+}
+
+.ed-header h1 {
+  color: var(--color-text-light);
+  @apply text-2xl font-bold;
+}
+
+.ed-body {
+  @apply px-6 pt-12 pb-10 flex flex-col gap-12;
+}
+
+/* ========= 表单控件 ========= */
+.ed-field {
+  @apply flex flex-col gap-2;
+}
+
+.ed-label {
+  color: var(--color-text-light);
+  @apply text-sm font-medium;
+}
+
+.ed-input {
+  background-color: #0f2238; /* 接近图里深蓝输入底色 */
+  color: #FF0000;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  @apply rounded-md px-3 py-5 outline-none transition;
+}
+
+.ed-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.ed-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.35); /* 红色聚焦环 */
+}
+
+/* Textarea 额外尺寸控制（保持和输入框风格一致） */
+.ed-textarea {
+  @apply resize-y;
+}
+
+/* ========= 发送按钮 ========= */
+.ed-send {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border: 3px solid var(--color-text-light);
+  width: 75%;
+  @apply block mt-4 mx-auto rounded-md px-6 py-3 text-lg font-semibold shadow-md transition;
+}
+
+.ed-send:hover {
+  background-color: var(--color-primary-light);
+}
+
+.ed-send:active {
+  transform: translateY(1px);
+}
