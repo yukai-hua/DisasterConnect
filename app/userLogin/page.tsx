@@ -69,7 +69,7 @@ export default function EmergencyDetailsPage() {
             className="ed-input"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
-            placeholder="e.g., Main Street & 2nd Ave"
+            placeholder="e.g., 139 Main Street & 2nd Ave, New York, NY"
             required
           />
           <button
