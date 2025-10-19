@@ -14,7 +14,6 @@ export async function getCurrentLocation(): Promise<GeoResult> {
   // 1) 告诉 loader 使用什么 key / 版本（只需调用一次即可）
   setOptions({
     apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string,
-    version: "weekly",
   });
 
   // 2) 按需加载库（不再使用 new Loader().load()）
